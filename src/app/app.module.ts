@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -41,10 +42,12 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { AuthorizationModule } from './views/authorization/authorization.module';
+import { ApiModule } from './views/api/api.module';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AppAsideModule,
@@ -56,7 +59,8 @@ import { AuthorizationModule } from './views/authorization/authorization.module'
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     ChartsModule,
-    AuthorizationModule
+    AuthorizationModule,
+    ApiModule,
   ],
   declarations: [
     AppComponent,

@@ -54,6 +54,10 @@ export const routes: Routes = [
         path: 'authorization',
         loadChildren: () => import('./views/authorization/authorization.module').then(m => m.AuthorizationModule)
       },
+      {
+        path: 'api',
+        loadChildren: () => import('./views/api/api.module').then(m => m.ApiModule)
+      },
 
 
 

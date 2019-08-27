@@ -1,0 +1,248 @@
+<div class="animated fadeIn">
+  <div class="row mt-2">
+
+
+    <div class="col-sm-6">
+
+
+      <div class="card">
+        <div class="card-header">
+
+            <button  type="button" class="btn"
+                      popover="Se necesita un token de tipo client_credencials y scope='openid payment'."
+                      popoverTitle="Iniciate payment"
+                      triggers="focus"
+                      >
+              Iniciate payment  <strong>/transfer-simulations</strong> <span class="badge badge-success ">POST</span>
+            </button>
+
+        </div>
+        <div class="card-body">
+          <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+
+            
+
+ 
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Client Credencials Token:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Token recibido via client credencials (se carga desde la sesion)" readonly />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Request URL (Sandbox):</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" readonly value="https://apis.bbva.com/payments-sbx/v1/me/transfer-simulations">
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Request URL (Production):</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" readonly value="https://apis.bbva.com/payments/v1/me/transfer-simulations">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Origin Account ID:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="ES0182002000000000500000000360278013XXXXXXXXX">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Account Name:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="Satoshi Nakamoto">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Account Number:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="ES9121000418450200051332">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Account BIC:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="BBVAESMM">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Amount:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="100.01">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Currency:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="EUR">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Concept:</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="" value="Send money to someone">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">TransferType</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="openid">Please select</option>
+                  <option value="SEPA" selected="selected">SEPA</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">FeePolicy:</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="openid">Please select</option>
+                  <option value="SHARED" selected="selected">SHARED</option>
+                </select>
+              </div>
+            </div>
+
+
+
+
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">HEADERS</div>
+
+        
+         <div class="card-body">
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td><strong>Content-Type</strong></td>
+                <td>application/json</td>
+              </tr>
+              <tr>
+                <td><strong>Accept</strong></td>
+                <td>application/json</td>
+              </tr>
+              <tr>
+                <td><strong>Authorization</strong></td>
+                <td>Authorization Header. Used to send a valid jwt Access Token.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+
+    </div><!--/.col-->
+
+    <div class="col-sm-6">
+
+
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Result
+        </div>
+        <div class="card-body">
+         
+
+
+<code ngNonBindable><pre >{{
+  "result": {
+    "code": 200,
+    "info": "OK"
+  },
+  "data": {
+    "value": {
+      "amount": "10.00",
+      "currency": "EUR"
+    },
+    "fee": {
+      "amount": "4.00",
+      "currency": "EUR"
+    },
+    "operationType": "INTERNATIONAL",
+    "sepa": true
+  }
+}}
+</pre></code>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+     <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Debug area
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>__key__</th>
+                <th>__value__</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fachtnatus</td>
+                <td>4324564g634hfghrhxdgfgd56fg5f3</td>
+              </tr>
+              <tr>
+                <td>Nehemiahtus</td>
+                <td>4324564g634hfghrhxdgfgd56fg5f3</td>
+              </tr>
+              <tr>
+                <td>Gemariah</td>
+                <td>4324564g634hfghrhxdgfgd56fg5f3</td>
+              </tr>
+              <tr>
+                <td>Eustorgios</td>
+                <td>4324564g634hfghrhxdgfgd56fg5f3</td>
+              </tr>
+              <tr>
+                <td>Leopoldus</td>
+                <td>4324564g634hfghrhxdgfgd56fg5f3</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+
+
+    </div><!--/.col-->
+
+
+  </div><!--/.row-->
+</div>

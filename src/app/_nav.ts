@@ -39,7 +39,9 @@ export const navItems: NavData[] = [
   },
 
 
-
+  /******************************  
+   * Aytorization menu
+   *****************************/
   {
     title: true,
     name: 'Autorización'
@@ -57,83 +59,75 @@ export const navItems: NavData[] = [
 
 
 
-  {
-    title: true,
-    name: 'Accounts'
-  },
-      {
-        name: 'Accounts',
-        url: '/accounts/accounts',
-        icon: 'cui-credit-card'
-      },
-      {
-        name: 'Banlance',
-        url: '/accounts/balance',
-        icon: 'cui-credit-card'
-      },
-      {
-        name: 'Transactions',
-        url: '/accounts/tranzactions',
-        icon: 'cui-credit-card'
-      },
-      {
-        name: 'Funds Confirmation',
-        url: '/accounts/founds_confirmation',
-        icon: 'cui-credit-card'
-      },
 
-
-
-
+  /******************************  
+   * Payment menu
+   *****************************/
   {
     title: true,
     name: 'Payments'
   },
       {
         name: 'Iniciate payment',
-        url: '/accounts/accounts',
+        url: '/api/iniciate-payment',
         icon: 'cui-dollar'
-      },
+      }, 
+/*
       {
         name: 'Bulk payments',
-        url: '/accounts/balance',
+        url: '/api/bulk-payments',
         icon: 'cui-dollar',
         badge: {
           variant: 'info badge-pill',
           text: 'NEW'
         }
-      },
+      }, 
       {
         name: 'Payment info',
-        url: '/accounts/tranzactions',
+        url: '/api/payment-info',
         icon: 'cui-dollar'
       },
       {
         name: 'Payment ini status',
-        url: '/accounts/founds_confirmation',
-        icon: 'cui-dollar'
-      },
-      {
-        name: 'Payment confirmation',
-        url: '/accounts/founds_confirmation',
+        url: '/api/payment-ini-status',
         icon: 'cui-dollar'
       },
       {
         name: 'Funds Confirmation',
-        url: '/accounts/founds_confirmation',
+        url: '/api/funds-confirmation',
+        icon: 'cui-dollar'
+      },
+*/
+      {
+        name: 'Payment confirmation',
+        url: '/api/payment-confirmation',
         icon: 'cui-dollar'
       },
 
 
 
-
-
-
-
-
-
-
-
+  /******************************  
+   * Payment menu
+   *****************************/
+  {
+    title: true,
+    name: 'Accounts'
+  },
+      {
+        name: 'Accounts',
+        url: '/api/accounts',
+        icon: 'cui-credit-card'
+      },
+      {
+        name: 'Banlance',
+        url: '/api/balance',
+        icon: 'cui-credit-card'
+      },
+      {
+        name: 'Transactions',
+        url: '/api/tranzactions',
+        icon: 'cui-credit-card'
+      },
 
 
 

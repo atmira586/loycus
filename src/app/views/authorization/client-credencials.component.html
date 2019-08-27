@@ -53,7 +53,7 @@
             </div>
 
 
-
+<!--
             <div class="form-group row">
               <label class="col-md-3 col-form-label" for="select1">Scope</label>
               <div class="col-md-9">
@@ -65,22 +65,34 @@
                 </select>
               </div>
             </div>
-
+-->
  
 
             <div class="form-group row">
-              <label class="col-md-3 col-form-label" for="multiple-select">Scope (demo multiple)</label>
+              <label class="col-md-3 col-form-label" for="multiple-select">Scopes
+                <button type="button" class="btn"
+                        popover="The responses for this API are accordingly filtered depending on the granted scopes for the calling application. These scopes are specified when the application is registered in BBVA API Market."
+                        data-html="true"
+                        popoverTitle="Avelable scopes"
+                        triggers="focus"
+                        popover-placement="bottom"
+                        popover-append-to-body="true"
+                        tooltip-html-unsafe
+                      >
+                  <i class="fa fa-info-circle fa-sm"></i>
+                </button>
+
+              </label>
               <div class="col-md-9">
-                <select id="multiple-select" name="multiple-select" class="form-control" size="6" multiple>
+                <select id="multiple-select" name="multiple-select" class="form-control" size="4" multiple>
                   <option value="openid">openid</option>
-                  <option value="accounts_list">accounts_list</option>
-                  <option value="accounts_balances">accounts_balances</option>
-                  <option value="accounts_transactions">accounts_transactions</option>
-                  <option value="accounts_funds">accounts_funds</option>
-                  <option value="payments">payments</option>
+                  <option value="paymentsTransfersList_sbx">paymentsTransfersList_sbx</option>
+                  <option value="paymentsTransfer_simulation_sbx_2">paymentsTransfer_simulation_sbx_2</option>
+                  <option value="paymentsTransfer_execution_sbx_1">paymentsTransfer_execution_sbx_1</option>
                 </select>
               </div>
             </div>
+
 
 			
 		        <div class="form-group row">
