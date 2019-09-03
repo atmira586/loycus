@@ -26,3 +26,9 @@ import { AuthorizationRoutingModule } from './authorization-routing.module';
   ]
 })
 export class AuthorizationModule { }
+
+
+
+//ngOnInit() {
+//	this.AuthorizationService();
+//}
