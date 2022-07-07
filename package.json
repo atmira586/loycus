@@ -45,7 +45,7 @@
     "core-js": "^2.6.9",
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mutationobserver-shim": "^0.3.3",
     "ng-shopping-cart": "^1.0.0",
     "ng2-charts": "^2.3.0",
